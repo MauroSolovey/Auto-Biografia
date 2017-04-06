@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="br">
 <head>
@@ -58,10 +57,11 @@
           margin-right: 20%;
       }
       a, a:hover{
-          color: #cecece
+          color: #cecece;
       }
-      b {
-          font-size: 13px;
+      b ,em{
+          font-size:;
+          color: #1abc9c;
       }
   .bg-1 { 
       background-color: #5f5f5f; /* #18432a */
@@ -89,7 +89,7 @@
   }
 
   .bg-7 { 
-      background-color: #000; /* #222272 */
+      background-color: #555555; /* #222272 */
       color: #cecece;
   }
       
@@ -101,17 +101,21 @@
   }
       
   .navbar {
-      padding-top: 1px;
-      padding-bottom: 1px;
+      padding-top: 0px;
+      padding-bottom: 0px;
       border: 0;
       border-radius: 0;
       margin-bottom: 0px;
       font-size: 12px;
       letter-spacing: 5px;
   }
-  .navbar-nav  li a:hover {
-      color: #1abc9c !important;
+  .navbar-nav  li a{
+           background-color: #5f5f5f;
   }
+      .navbar-nav  li a:hover {
+          color: #1abc9c !important;
+          background-color: #5c5c5c;
+      }
 @media{
   .navbar-header {
       float: none;
@@ -121,6 +125,7 @@
   }
   .navbar-toggle {
       display: block;
+      background-color: #7e7e7e;
   }
   .navbar-collapse {
       border-top: 1px solid transparent;
@@ -147,26 +152,28 @@
   .collapse.in{
       display:block !important;
   }
-   
+   .icon-bar {
+  background-color: white;
+}
     
   </style>
 </head>
-<body>
-
+<body class="bg-1">
+<div id="myPage"></div>
 <!-- Navbar -->
-<nav id="myPage" class="container-fluid navbar navbar-inverse">
+<nav class="container-fluid navbar-fixed-top navbar navbar-invers">
   <div>
-    <div class="navbar-header">
+    <div style="background-color:#5c5c5c" class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Auto-Biografia de Mauro Solovey</a>
+      <a class="navbar-brand" href="#">Mauro Solovey</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-          <li><a href="#qse">Quem_Sou_Eu</a></li>
+          <li><a href="#myPage">Quem_Sou_Eu</a></li>
         <li><a href="#oe">Onde_Estudei</a></li>
         <li><a href="#ot">Onde_Trabalhei</a></li>
             <li><a href="#esp">Hobbies</a></li>
@@ -174,15 +181,15 @@
     </div>
   </div>
 </nav>
-
+<br>
 <!-- First Container -->
-<div  id="qse" class="container-fluid bg-1 text-center">
-    <div class="col-sm-5">
+<div class="container-fluid bg-1 text-center">
+    <div class="col-sm-12">
   <h3>Quem Sou Eu?</h3>
-  <img src="fotos/Picture1.png" style="-webkit-filter: grayscale(1);" class="img-circle margin"  alt="foto Mauro Solovey" width="250">
-     <h3>Eu sou Mauro Solovey</h3>
     </div>
-    <div class="col-sm-7 text-left">
+    <div class="col-xs-12 text-left">
+  <img src="fotos/Picture1.png" style="max-width:250px;float:right;margin:0px 30px 0px 05px;-webkit-filter: grayscale(1);" class="img-circle" alt="foto Mauro Solovey" width="100%">
+ 
     <p>Sou <b>casado</b> com Saionara Solovey, tenho <b>35 anos</b> e sou pai de Lesly de 12 anos e Marina de 1.7 anos.</p>
     <p>Sou <b>Brasileiro</b>, nasci no Rio de Janeiro em 1981, ja com um ano fui morar em São Paulo.Em 1987 fui morar na Argentina em Buenos Aires onde fiquei ate os 23 anos de vida quando decidi voltar ao Brasil.</p>
     <p>Meu telefone e <b>(22) 9 9255 8587</b> -também é meu Whatsapp -</p>
@@ -191,9 +198,9 @@
     </div>
    
     </div>
-
+<br><hr id="oe"><br>
 <!-- Second Container -->
-<div id="oe" class="container-fluid bg-1 text-center">
+<div class="container-fluid bg-1 text-center">
      <div class="col-sm-7  text-left">
   <h3>Onde Estudei ?</h3>
           <p>Em <b>2014</b>, Realizei o curso <em>Aquecedor de água residencial - Solar</em>,pela Heliotek-Bosch</p><hr>
@@ -201,10 +208,10 @@
     <p>Em <b>2006</b>, me formei como <em>“Fotografo Profissional”</em>, pela Escola Focus de fotografia</p><hr>
          <p>Em <b>2005</b>, me formei como <em>“Guardião de Piscina”</em>, pelo Corpo De Bombeiros Militar Do Estado Do Rio De Janeiro, 2º Grupamento Marítimo.</p><hr>
     <p>Em <b>2004</b>, me formei como <em>“Guardavidas”</em>, pelo Instituto Superior de Ciencias de la Salud (Buenos Aires – Argentina).</p><hr>
-<p>Em <b>1999</b>, concluí o ensino médio, no Colégio Del Pacifico Hartley Shannon em Buenos Aires, Argentina. Onde depois cursei 3 anos no Instituto Superior de Educação Física I.S.E.F. nº1, Enrique Romero Brest.</p>
+<p>Em <b>1999</b>, concluí o <b>ensino médio</b>, no Colégio Del Pacifico Hartley Shannon em Buenos Aires, Argentina. Onde depois cursei 3 anos no Instituto Superior de Educação Física I.S.E.F. nº1, Enrique Romero Brest.</p>
     </div>
     <div class="col-sm-5 text-right">
-        <h3>Noções Complemetares</h3><br>
+        <h3>Noções Complemetares</h3>
         <h4>Idiomas</h4>
         <p>Inglês (basico)</p><p>Español (fluente)</p><p>português (fluente)</p><hr>
         <h4>Informatica</h4>
@@ -213,91 +220,95 @@
         <p>CNH categoria B</p>
     </div>
     </div>
-
+<br><hr><br>
 <!-- Third Container (Grid) -->
 <div id="ot" class="container-fluid bg-1 text-left">
-    <div class="col-sm-10">
+    <div class="col-sm-12">
   <h3>Onde Trabalhei ?</h3><br>
         <ul>
-        <li>2014 - 2017
-        <p>ECOSOL-LAGOS - Energia Solar - Instalador, Vendedor e Projetista.</p>
+        <li><b>2014 - 2017</b>
+        <p>ECOSOL-LAGOS - Energia Solar - <em>Instalador, Vendedor e Projetista.</em></p>
             </li>    
-        <li>2010 a 2013
-        <p>Freelancer - Fotógrafo</p>
+        <li><b>2010 a 2013</b>
+        <p>Freelancer - <em>Fotógrafo.</em></p>
             </li>
-        <li>2008 a 2009
-           <p>JORNAL PRIMEIRA HORA, Búzios, RJ, Brasil – Fotógrafo.</p>         
+        <li><b>2008 a 2009</b>
+           <p>JORNAL PRIMEIRA HORA, Búzios, RJ, Brasil – <em>Fotógrafo.</em></p>         
         </li>
-        <li>temporada de verão 2007
-            <p>OLAQUA - Condominio, Madrid, España – Salva-Vidas</p>    
+        <li><b>Temporada de verão 2007</b>
+            <p>OLAQUA - Condominio, Madrid, España – <em>Salva-Vidas.</em></p>    
         </li>    
-        <li>2006 a 2007
-            <p>MUNCHIS - Sorveteria, Buenos Aires, Argentina – Atendente e Motoboy.</p>    
+        <li><b>2006 a 2007</b>
+            <p>MUNCHIS - Sorveteria, Buenos Aires, Argentina – <em>Atendente e Motoboy.</em></p>    
         </li>
-        <li>2005 a 2006
-           <p>ALOHA – Condomínio, Rio de Janeiro, RJ, Brasil – Salva-Vidas.</p> 
+        <li><b>2005 a 2006</b>
+           <p>ALOHA – Condomínio, Rio de Janeiro, RJ, Brasil – <em>Salva-Vidas.</em></p> 
         </li>
-        <li>temporada de verão 2004
-            <p>DIVISADERO, PERICO e BARBADOS – Balneários, Costa Atlântica, Partido de Pinamar, Buenos Aires – Salva-Vidas.</p>
+        <li><b>Temporada de verão 2004</b>
+            <p>DIVISADERO, PERICO e BARBADOS – Balneários, Costa Atlântica, Partido de Pinamar, Buenos Aires – <em>Salva-Vidas.</em></p>
         </li>  
-        <li> 2001 a 2003
-            <p>ELINPAR S.A. – Eletrônica Integral Participativa, Buenos Aires, Argentina – Office-boy</p>
+        <li><b>2001 a 2003</b>
+            <p>ELINPAR S.A. – Eletrônica Integral Participativa, Buenos Aires, Argentina – <em>Office-boy.</em></p>
         </li>
-        <li>2000 a 2001
-            <p>DON PEPO – Restaurante, Buenos Aires, Argentina – Garçon.</p>
+        <li><b>2000 a 2001</b>
+            <p>DON PEPO – Restaurante, Buenos Aires, Argentina – <em>Garçom.</em></p>
         </li>
         </ul>
       </div>
 </div>
+    <br><hr><br>
     <!-- Hobbies-->
     <div id="esp" class="container-fluid bg-1 text-left">    
   <h3>Hobbies</h3><br>
-       <div class="col-sm-7" text-left>
-           <ul>
-               <li>2016 - 2017
+        <div class="col-sm-3">
+            <img src="fotos/esporte/IMG_20170327_201043159.jpg" class="img-responsive" style="float:right; margin: 0 0px 0px 0; width:100%" alt="Image">
+        </div>
+       <div class="col-sm-6">
+           <div>
+               <span>2016 - 2017
                 <p>Atualmente treino Tenis de mesa 2 vezes por semana no clube BEC (Buzios Esporte Clube) de manguinhos.</p>
-               </li>
-               <li>2004 - 2005
+               </span>
+               <span>2004 - 2005
                <p>passei a representar o clube SAG (Sociedade Alemana de Gimnasia) na 2da divisão como levantador</p>
-               </li>
-               <li>2002 - 2004
-               <p>Fiz volei representando o clube Brest (Instituto Superior de Educação Fisica Nº 1 Romero Brest) na categoria adulto 4ta divisã como levantador</p>
-               </li>
-           <li>1989 - 1997
-               <p>Comecei a vida esportiva com 8 anos no clube GEBA (Gimnasia e Esgrima de Buenos aires) nas categorias de base, fazendo volei, tenis de mesa e natação.</p>
-               </li>
-           </ul>
+               </span>
+               <span>2002 - 2004
+               <p>Voltei ao volei representando o clube Brest (Instituto Superior de Educação Fisica Nº 1 Romero Brest) na categoria adulto 4ta divisã como levantador</p>
+               </span>
+           <span><h5>1989 - 1997</h5>
+               <p style="text-indent:1em">
+                  Comecei a vida esportiva com 8 anos no clube GEBA (Gimnasia e Esgrima de Buenos aires) nas categorias de base, fazendo volei, tenis de mesa e natação.</p>
+               </span>
            </div>
-        <div class="col-sm-5"> 
-             <img src="fotos/esporte/IMG_20170327_201043159.jpg" class="img-responsive" style="width:100%" alt="Image"><br>
-              <img src="fotos/esporte/IMG_20170327_201103252.jpg" class="img-responsive" style="width:100%" alt="Image"><br>
+           </div>
+        <div class="col-sm-3">  
+              <img src="fotos/esporte/IMG_20170327_201103252.jpg" class="img-responsive" style="width:100%" alt="Image">
        </div>
-
     </div>
+    <hr><br>
+    <!-- The container for the list of example images -->
     <div class="col-sm-1"></div>
 <div class="container col-sm-10 text-center bg-7">
-   <br> <h3>Eu e a Familia</h3>
-    <!-- The container for the list of example images -->
-    <div id="links">
+   <br> <h3>minha familia</h3>
+    <div>
         <a data-gallery="" title="marina alimentando fidel" href="fotos/familia/DSC3006.JPG">
             <img style="width: 20% " src="fotos/familia/250x363_DSC3006.JPG">
         </a>
-         <a data-gallery="" title="eu e meu irmão" href="fotos/familia/IMG_20170327_200646173.jpg">
+         <a data-gallery="" title="meu irmão e eu" href="fotos/familia/IMG_20170327_200646173.jpg">
             <img style="width: 20% " src="fotos/familia/250x398_IMG_20170327_200646173.jpg">
         </a>
-          <a data-gallery="" title="eu e minha mãe" href="fotos/familia/IMG_20170327_200626054.jpg">
+          <a data-gallery="" title="minha mãe e eu" href="fotos/familia/IMG_20170327_200626054.jpg">
             <img style="width: 20% " src="fotos/familia/250x299_IMG_20170327_200626054.jpg">
         </a>
-          <a data-gallery="" title="eu e meu pai" href="fotos/familia/IMG_20170327_201122931.jpg">
+          <a data-gallery="" title="meu pai e eu" href="fotos/familia/IMG_20170327_201122931.jpg">
             <img style="width: 20% " src="fotos/familia/250x294_IMG_20170327_201122931.jpg">
         </a>
           <a data-gallery="" title="eu" href="fotos/familia/IMG_20170327_200537731.jpg">
             <img style="width: 20% " src="fotos/familia/250x297_IMG_20170327_200537731.jpg">
         </a>
-         <a data-gallery="" title="eu marina e lesly" href="fotos/familia/IMG_20151231_120658.jpg">
+         <a data-gallery="" title="marina, lesly e eu" href="fotos/familia/IMG_20151231_120658.jpg">
             <img style="width: 20% " src="fotos/familia/250x444_IMG_20151231_120658.jpg">
         </a>
-         <a data-gallery="" title="Lesly e Marina em BsAs" href="fotos/familia/IMG_20160817_152829347.jpg">
+         <a data-gallery="" title="lesly e marina em bsas" href="fotos/familia/IMG_20160817_152829347.jpg">
             <img style="width: 20% " src="fotos/familia/250x411_IMG_20160817_152829347.jpg">
         </a>
          <a data-gallery="" title="lelinha" href="fotos/familia/MG_7398.jpg">
@@ -306,6 +317,7 @@
     </div>
     <br>
 </div>
+    
 <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
 <div id="blueimp-gallery" class="blueimp-gallery">
     <!-- The container for the modal slides -->
@@ -341,10 +353,14 @@
     </div>
 </div>
 <div class="col-sm-1"></div>
+    
+   <div class="col-sm-12">
+    <br><br><hr><br>
+    </div>
     <!-- Footer -->
 <footer class="container-fluid bg-1 text-center">
         <div class="col-xs-12">
-  <p>Made By <a href="https://www.facebook.com/mauro.solovey">Mauro_Solovey</a></p> 
+  <p>Made By <a href="https://www.facebook.com/mauro.solovey"><b>Mauro_Solovey</b></a></p> 
     </div>
         <div class="col-xs-12">
         <a class="col-sm-12 text-center" href="#myPage" title="To Top">
